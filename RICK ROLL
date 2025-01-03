@@ -1,0 +1,12 @@
+ID 05ac:021e Apple:Keyboard
+DELAY 500
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 1000
+ENTER
+DELAY 1000
+STRING https://m.youtube.com/watch?v=uHgt8giw1LY&pp=ygUeTmV2ZXIgZ29ubmEgZ2l2ZSB0b3UgdXAgbm8gYWRk
+DELAY 5000
+ENTER
+DELAY 1000
