@@ -6,4 +6,5 @@ STRING terminal
 DELAY 1000
 ENTER
 DELAY 1000
-STRING open -a Wi-Fi>Settings
+STRING open -a Settings
+DELAY 1000
