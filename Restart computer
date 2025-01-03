@@ -6,6 +6,6 @@ STRING terminal
 DELAY 1000
 ENTER
 DELAY 1000
-STRING % sudo shutdown -r now.
+STRING sudo shutdown -r now
 DELAY 500
 ENTER
