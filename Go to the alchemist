@@ -1,0 +1,10 @@
+ID 05ac:021e Apple:Keyboard
+DELAY 500
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 1000
+ENTER
+DELAY 1000
+STRING open -a safari 'https://youtube.com/@the_alchemist_xd?si=uJvJhubJ84t4Hg2l'
+DELAY 1000
