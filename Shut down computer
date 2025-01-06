@@ -1,0 +1,41 @@
+ID 05ac:021e Apple:Keyboard
+DELAY 500
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 1000
+ENTER
+DELAY 1000
+import paramiko
+
+def shutdown_macbook():
+    # SSH details
+    ssh_client = paramiko.SSHClient()
+    ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+    # Replace these with your actual MacBook details
+    macbook_ip = "192.168.x.x"  # Your MacBook's IP address
+    username = "your_username"  # Your macOS username
+    password = "your_password"  # Your macOS password
+
+    try:
+        # Connect to the MacBook via SSH
+        ssh_client.connect(macbook_ip, username=username, password=password)
+
+        # Run shutdown command
+        stdin, stdout, stderr = ssh_client.exec_command("sudo shutdown -h now")
+
+        # If you want to provide a password for sudo, you can handle that as well
+        stdin.write(password + '\n')
+        stdin.flush()
+
+        print(stdout.read().decode())  # Output of the shutdown command
+
+    except Exception as e:
+        print(f"Failed to connect to the MacBook: {e}")
+
+    finally:
+        ssh_client.close()
+
+# Call the shutdown function
+shutdown_macbook()
