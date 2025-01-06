@@ -1,0 +1,15 @@
+05ac:021e Apple:Keyboard
+DELAY 500
+GUI SPACE
+DELAY 500
+STRING terminal
+DELAY 1000
+ENTER
+DELAY 1000
+STRING sudo shutdown -h now
+DELAY 500
+ENTER
+DELAY 500
+STRING your_password_here  # Replace with your MacBook password
+DELAY 500
+ENTER
